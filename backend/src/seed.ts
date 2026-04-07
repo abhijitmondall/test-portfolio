@@ -7,7 +7,19 @@ async function main() {
   console.log("🌱 Seeding database...");
 
   // Admin user
-  const hashedPwd = await bcrypt.hash("Admin@123", 12);
+  // Use `ADMIN_PASSWORD` from environment for seeding. In production the env var is required.
+  let adminPlain = process.env.ADMIN_PASSWORD;
+  if (!adminPlain) {
+    if (process.env.NODE_ENV === "production") {
+      throw new Error(
+        "ADMIN_PASSWORD environment variable is required for production seeding",
+      );
+    }
+    // Local/dev fallback (do NOT commit this value or use it in production)
+    adminPlain = "Admin@123";
+  }
+
+  const hashedPwd = await bcrypt.hash(adminPlain, 12);
   await prisma.user.upsert({
     where: { email: "abhijeetmondal5@gmail.com" },
     update: {},

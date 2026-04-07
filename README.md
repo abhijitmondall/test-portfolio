@@ -102,12 +102,12 @@ npm run dev
 
 Access: **http://localhost:3000/admin**
 
-Default credentials (from seed):
+Default admin (local development only):
 
 - Email: `abhijeetmondal5@gmail.com`
-- Password: `Admin@123`
+- Password: configured via `ADMIN_PASSWORD` in `backend/.env` (do not commit real passwords)
 
-**Change your password immediately after first login** via Settings → Password.
+Set `ADMIN_PASSWORD` in `backend/.env` before running the seed, and change the password immediately after first login in production.
 
 ---
 
