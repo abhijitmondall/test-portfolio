@@ -1,0 +1,45 @@
+# Root .gitignore — monorepo (frontend + backend)
+
+# Node modules
+node_modules/
+
+# Environment
+.env
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.vercel/
+
+# Prisma client artifacts
+node_modules/.prisma/
+
+# Runtime / uploads
+uploads/
+
+# TypeScript
+*.tsbuildinfo
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage & cache
+coverage/
+.cache/
+
+# Misc
+*.local

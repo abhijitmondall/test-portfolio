@@ -1,0 +1,2 @@
+/* Append to globals.css - Admin form utilities */
+/* These are used as @apply shortcuts in admin pages */

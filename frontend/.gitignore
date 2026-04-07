@@ -1,0 +1,30 @@
+# Frontend .gitignore (Next.js)
+
+# Node
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment
+.env.local
+.env.*.local
+
+# Vercel
+.vercel/
+
+# Build
+dist/
+build/
+
+# Editor
+.vscode/
+
+# OS
+.DS_Store
+
+# Cache
+.cache/
+.vercel
+.next/cache

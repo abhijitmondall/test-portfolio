@@ -1,0 +1,32 @@
+# Backend .gitignore
+
+# Node
+node_modules/
+
+# Build
+dist/
+build/
+
+# Environment
+.env
+.env.*.local
+
+# Prisma
+node_modules/.prisma/
+
+# Uploads & temp
+uploads/
+tmp/
+
+# Local debug helpers
+tmp_check_locks.ts
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+
+# OS
+.DS_Store
+.vercel
